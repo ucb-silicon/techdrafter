@@ -18,7 +18,6 @@ function GetThings($url) {
 
   // $patternContactUrl = "/aashni/";
   $patternContactUrl = "/<a\s[^>]*href=(\"??)([^\" >]*?)\\1[^>]*>([cC]ontact.*)<\/a>/";
-  preg_match($patternContactUrl, $html, $matches);
   print_r($matches);
 
   // echo $matches[0];
