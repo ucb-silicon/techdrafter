@@ -45,6 +45,5 @@ $extra_links = array();
 foreach ($links as $link) {
   array_push($extra_links, GetThings($link));
 }
-echo json_encode($user);
-echo json_encode($extra_links);
+echo json_encode(array('user' => $user, 'extra_links' => $extra_links));
 ?>
