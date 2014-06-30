@@ -38,6 +38,13 @@ function GetThings($url) {
   return $links;
 }
 
-$user['extra_links'] = GetThings($url);
+$output = shell_exec("./parse.py " . json_encode($user));
+$links = explode("\n", $output);
+
+$extra_links = array();
+foreach ($links as $link) {
+  array_push($extra_links, GetThings($link));
+}
 echo json_encode($user);
+echo json_encode($extra_links);
 ?>
