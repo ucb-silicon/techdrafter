@@ -7,5 +7,5 @@ The utility is meant to be deployed in a web setting. Include the files in a dir
 
 Here is the information that will be returned:
 
-# LinkedIn profile information (name, email, publications, associated URLs, associations, patents, skills, and education)
-# Links to their GitHub, Facebook, StackOverflow, and Twitter found on their personal web page
+- LinkedIn profile information (name, email, publications, associated URLs, associations, patents, skills, and education)
+- Links to their GitHub, Facebook, StackOverflow, and Twitter found on their personal web page
